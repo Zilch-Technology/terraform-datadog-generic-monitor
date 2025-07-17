@@ -152,9 +152,9 @@ variable "notify_no_data" {
 }
 
 variable "locked" {
-  description = "Makes sure only the creator or admin can modify the monitor"
+  description = "locked is deprecated: Reason: A boolean indicating whether changes to this monitor should be restricted to the creator or admins. Defaults to 'false'. **Deprecated.** Use 'restricted_roles'."
   type        = bool
-  default     = true
+  default     = null
 }
 
 variable "name_prefix" {
