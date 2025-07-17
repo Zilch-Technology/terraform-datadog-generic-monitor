@@ -201,3 +201,9 @@ variable "new_group_delay" {
   type        = number
   default     = null
 }
+
+variable "evaluation_delay" {
+  description = "(Number) (Only applies to metric alert) Time (in seconds) to delay evaluation, as a non-negative integer. https://registry.terraform.io/providers/DataDog/datadog/latest/docs/resources/monitor"
+  type        = number
+  default     = null
+}

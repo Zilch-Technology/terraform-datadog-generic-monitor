@@ -75,6 +75,8 @@ resource "datadog_monitor" "generic_datadog_monitor" {
   require_full_window = var.require_full_window
   new_group_delay     = var.new_group_delay
 
+  evaluation_delay = var.evaluation_delay
+
   monitor_thresholds {
     critical          = var.critical_threshold
     critical_recovery = var.critical_recovery
